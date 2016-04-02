@@ -38,7 +38,7 @@ var readFile = promisify(require("fs")).readFile;
 ## API
 
 ```javascript
-promisify(method, options)
+promisify(method[, options])
 ```
     *Method* can be a function or an array/map of functions to promisify
     
