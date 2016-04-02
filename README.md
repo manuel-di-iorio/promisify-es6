@@ -23,7 +23,7 @@ readFile("test.js")
  });
 ```
 
-A promisifed function is still callable with the callback style:
+A promisified function is still callable with the callback style:
 
 ```javascript
 readFile("test.js", function(err, content) { //etc...
