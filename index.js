@@ -22,15 +22,22 @@
  **/
 
 "use strict";
- 
+
 const createCallback = (method, context) => {
     return function() {
-        const args = Array.prototype.slice.call(arguments);   
+        const args = Array.prototype.slice.call(arguments);
+        const lastIndex = args.length - 1;
+        const lastArg = args && args.length > 0 ? args[lastIndex] : null;
+        const cb = typeof lastArg === 'function' ? lastArg : null;
 
-        return new Promise((solve, reject) => {
+        if (cb) {
+            return method.apply(context, args);
+        }
+
+        return new Promise((resolve, reject) => {
             args.push((err, val) => {
                 if (err) return reject(err);
-                solve(val);
+                resolve(val);
             });
 
             method.apply(context, args);
@@ -51,6 +58,6 @@ module.exports = (methods, options) => {
 
         return obj;
     }
-    
+
     return createCallback(methods, options.context || methods);
 }
