@@ -1,6 +1,6 @@
 {
   "name": "promisify-es6",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Promisify callback-style functions to ES6 promises",
   "main": "index.js",
   "scripts": {

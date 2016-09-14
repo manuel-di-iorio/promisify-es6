@@ -17,7 +17,7 @@
  * @return: A promise if passed a function, otherwise the object with the promises
  *
  * @license: MIT
- * @version: 1.0.1
+ * @version: 1.0.2
  * @author: Manuel Di Iorio
  **/
 
