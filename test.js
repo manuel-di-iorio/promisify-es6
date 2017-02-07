@@ -74,16 +74,16 @@ describe('Promisify a native Node module', function() {
 });
 
 describe('callback handling', function() {
-  it('should throw error if using a callback', function(done) {
-    var failMe = promisify(function(msg, cb) {
-      throw new Error(msg);
-    });
+    it('should throw error if using a callback', function(done) {
+        var failMe = promisify(function(msg, cb) {
+            throw new Error(msg);
+        });
 
-    try {
-      failMe('fail', function () {});
-    } catch (err) {
-      assert.equal(err.message, 'fail')
-      done();
-    }
-  });
+        try {
+            failMe('fail', function () {});
+        } catch (err) {
+            assert.equal(err.message, 'fail')
+            done();
+        }
+    });
 });
