@@ -1,5 +1,15 @@
+**NOTE:** Starting from Node.js v.8.0.0, the promisify method is now included in the `util` native library.
+
+Usage of the native method is recommend!
+
+```
+// Native promisify example
+const util = require('util');
+const readfile = util.promisify(fs.readFile);
+```
+
 # ES6 Promisify
-Promisify callback-style functions to ES6 promises
+This was a library to promisify callback-style functions to ES6 promises
 
 ###Install it with:
   
