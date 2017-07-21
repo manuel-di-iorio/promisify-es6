@@ -57,6 +57,6 @@ promisify(method[, options])
         `context`: The context which to apply the called function (by default is the function itself)
         `replace`: When an array/map is passed and this is truthy, it will replace the original object 
     
-###Test with:
+### Test with:
 
     npm test
