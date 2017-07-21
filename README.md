@@ -1,6 +1,6 @@
 **NOTE:** Starting from Node.js v.8.0.0, the promisify method is now included in the `util` native library.
 
-Usage of the native method is recommend!
+Usage of the native method is recommended!
 
 ```
 // Native promisify example
