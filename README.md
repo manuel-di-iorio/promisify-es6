@@ -11,13 +11,13 @@ const readfile = util.promisify(fs.readFile);
 # ES6 Promisify
 This was a library to promisify callback-style functions to ES6 promises
 
-###Install it with:
+### Install it with:
   
     npm i --save promisify-es6
     or
     git clone https://github.com/manuel-di-iorio/promisify-es6.git
     
-###Example:
+### Example:
 
 ```javascript
 var promisify = require("promisify-es6");
