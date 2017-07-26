@@ -1,15 +1,17 @@
 {
-  "name": "promisify-es6",
-  "version": "1.0.2",
+  "author": {
+    "name": "Manuel Di Iorio"
+  },
+  "bugs": {
+    "url": "https://github.com/manuel-di-iorio/promisify-es6/issues"
+  },
+  "bundleDependencies": [],
+  "deprecated": false,
   "description": "Promisify callback-style functions to ES6 promises",
-  "main": "index.js",
-  "scripts": {
-    "test": "node_modules/.bin/mocha test"
+  "devDependencies": {
+    "mocha": "^2.4.5"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manuel-di-iorio/promisify-es6.git"
-  },
+  "homepage": "https://github.com/manuel-di-iorio/promisify-es6#readme",
   "keywords": [
     "promise",
     "promisify",
@@ -17,14 +19,15 @@
     "function",
     "callback"
   ],
-  "author": "Manuel Di Iorio",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/manuel-di-iorio/promisify-es6/issues"
+  "main": "index.js",
+  "name": "promisify-es6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuel-di-iorio/promisify-es6.git"
   },
-  "homepage": "https://github.com/manuel-di-iorio/promisify-es6#readme",
-  "devDependencies": {
-    "mocha": "^2.4.5"
+  "scripts": {
+    "test": "mocha test"
   },
-  "readmeFilename": "README.md"
+  "version": "1.0.3"
 }

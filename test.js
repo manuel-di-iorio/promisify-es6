@@ -60,15 +60,15 @@ describe('Promisify a native Node module', function() {
     var fs = promisify(require("fs"));
     var crypto = require("crypto");
 
-    it("should assert the hashed content of the LICENSE file", function() {
+    it("should assert the hashed content of the given string", function() {
         return fs.readFile("./LICENSE")
         .then(function(content) {
             var hash = crypto
-                    .createHash("sha1")
-                    .update(content)
-                    .digest("hex");
+            .createHash("sha1")
+            .update(content)
+            .digest("hex");
 
-            assert.equal("504af7b48f92e3f9d6d96cf8913bfa60514eefde", hash);
+            assert.equal("4fe3cbcca15cfa585857288d29d42c0973fc850a", hash);
         });
     });
 });
